@@ -41,6 +41,7 @@ if __name__ == "__main__":
 
 ## Dll Functions
 The following win32 functions are implimented.
+
 + FindWindow
 + VirtualAllocEx
 + GetWindowThreadProcessId
@@ -53,6 +54,7 @@ The following win32 functions are implimented.
 + CreateRemoteThread
 
 ## vb.net class functions
+
 + getProcess
 + allocRemoteString
 + getAddress
@@ -60,6 +62,7 @@ The following win32 functions are implimented.
 + writeInt
 
 ## python class functions
+
 + allocRemoteString
 + getProcess
 + getAddress
