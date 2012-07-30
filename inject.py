@@ -66,14 +66,7 @@ class Inject:
 		return thread
 		
 		
-def main():
-	i = Inject(None,"Sonic Adventure DX")
-	i.injectDll("Loader.dll")
-	
-	
-	
-	
-		
-if __name__ == "__main__":
-	main()
+#i = Inject(None,"Sonic Adventure DX")
+#i.injectDll("Loader.dll")
+
 	
