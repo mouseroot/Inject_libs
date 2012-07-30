@@ -1,21 +1,11 @@
 ﻿Imports Microsoft.Win32
 Imports System
 Imports System.Runtime.InteropServices
-Imports EasyHook
-Imports SlimDX
-Imports SlimDX.Direct3D9
-
-Namespace Epic
 
     Public Class Injector
 
-        Public Sub Injector()
-
-        End Sub
-
-
         Const PROCESS_ALL_ACCESS As Long = &H1F0FFF
-        'Const MEM_CREATE As Long = &H100 Or &H200
+        Const MEM_CREATE As Long = &H100 Or &H200
         Const MEM_COMMIT As Integer = &H1000
         Const PAGE_EXECUTE_READWRITE As Integer = &H40
 
@@ -126,5 +116,3 @@ Namespace Epic
         End Sub
 
     End Class
-
-End Namespace

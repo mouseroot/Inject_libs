@@ -3,7 +3,7 @@ import struct
 import time
 
 
-class Inject:
+class Injector:
 	def __init__(self,classname=None,title=None,pid=None):
 		self.PROC_ALL_ACCESS = 0x001F0FFF
 		self.MEM_CREATE = 0x00001000 | 0x00002000
@@ -64,9 +64,5 @@ class Inject:
 		loadlib = self.getAddress("kernel32.dll","LoadLibraryA")
 		thread = self.kern32.CreateRemoteThread(self.handle,None,None,c_long(loadlib),c_long(dll),None,None)
 		return thread
-		
-		
-#i = Inject(None,"Sonic Adventure DX")
-#i.injectDll("Loader.dll")
 
 	
