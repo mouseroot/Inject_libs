@@ -2,6 +2,24 @@ from ctypes import *
 import struct
 import time
 
+class RECT(Structure):
+    _fields_ = [('left', c_long),
+                ('top', c_long),
+                ('right', c_long),
+                ('bottom', c_long)]
+
+class PAINTSTRUCT(Structure):
+    _fields_ = [('hdc', c_int),
+                ('fErase', c_int),
+                ('rcPaint', RECT),
+                ('fRestore', c_int),
+                ('fIncUpdate', c_int),
+                ('rgbReserved', c_char * 32)]
+
+class POINT(Structure):
+    _fields_ = [('x', c_long),
+                ('y', c_long)]
+
 
 class Injector:
 	def __init__(self,classname=None,title=None,pid=None):
