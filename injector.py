@@ -30,6 +30,9 @@ class Injector:
 		self.kern32 = windll.kernel32
 		self.title = title
 		self.classname = classname
+		self.RECT = RECT
+		self.POINT = POINT
+		self.PAINTSTRUCT = PAINTSTRUCT
 		self.pid = c_ulong()
 		try:
 			if classname or title:
