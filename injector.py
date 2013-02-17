@@ -28,6 +28,7 @@ class Injector:
 		self.PAGE_RW = 0x00000004
 		self.PAGE_EX = 0x40
 		self.kern32 = windll.kernel32
+		self.user32 = windll.user32
 		self.title = title
 		self.classname = classname
 		self.RECT = RECT
@@ -49,7 +50,7 @@ class Injector:
 	
 	def getProcess(self,classname=None,title=None):
 		hwnd = windll.user32.FindWindowA(c_char_p(classname),c_char_p(title))
-		windll.user32.GetWindowThreadProcessId(hwnd,byref(self.pid))
+		self.user32.GetWindowThreadProcessId(hwnd,byref(self.pid))
 		handle = self.kern32.OpenProcess(self.PROC_ALL_ACCESS,0,self.pid)
 		return handle
 		
