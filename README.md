@@ -10,6 +10,7 @@ need to write trainer like programs for the following languages
 
 + __vb.net__
 + __python w/ ctypes__
++ __C#__
 
 ## Useage
 methods are exposed via the Injector class for all languages
@@ -73,3 +74,6 @@ The following win32 functions are implimented.
 + readString
 + injectDLL
 
+## C# class functions
+
++ more stuff 
