@@ -76,4 +76,25 @@ The following win32 functions are implimented.
 
 ## C# class functions
 
-+ more stuff 
++ FindWindow
++ VirtualAllocEx
++ GetWindowThreadProcessId
++ OpenProcess
++ GetModuleHandle
++ GetProcAddress
++ WriteProcessMemory
++ ReadProcessMemory
++ CreateRemoteThread
++ getProcess
++ getProcessByTitle
++ getProcessByClassName
++ allocMemory
++ allocateRemoteString
++ writeInt
++ writeString
++ getProcesses
++ getProcessByName
++ getAddress
++ injectDLL
++ convertHexValue
++ convertDecValue
