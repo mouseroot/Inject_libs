@@ -40,7 +40,7 @@ if __name__ == "__main__":
 	main()
 ```
 
-_csharp_
+_c#_
 ```
 using InjectionLibrary;
 	IntPtr cmdHandle = Injection.getProcess(null,"Command Prompt");
