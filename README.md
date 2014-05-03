@@ -40,6 +40,14 @@ if __name__ == "__main__":
 	main()
 ```
 
+_csharp_
+```
+using InjectionLibrary;
+	IntPtr cmdHandle = Injection.getProcess(null,"Command Prompt");
+	IntPtr remoteString = Injection.allocateRemoteString(cmdHandle,"Hello world");
+
+```
+
 ## Dll Functions
 The following win32 functions are implimented.
 
