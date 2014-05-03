@@ -1,7 +1,9 @@
 Injection Libs
 ==============
 
-### Incomplete.
+### VB.NET Incomplete.
+### Python Complete
+### C# Complete
 
 ## About
 This is a small collection of libraries to call win32 functions
